@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+ <h4>Please fill out this form with the required information</h4>
+</head>
+    <body>
+  <form>
+    <h1>Registration Form</h1>
+     <p class="description">Please fill out this form with the required information</p>
+
+      <label for="firstName">First Name:</label>
+     <input type="text" id="firstName" name="firstName" autocomplete="given-name" required />
+
+      <label for="lastName">Last Name:</label>
+     <input type="text" id="lastName" name="lastName" autocomplete="family-name" required />
+
+<label for="email">Email:</label>
+    <input type="email" id="email" name="email" autocomplete="email" required />
+
+    <label for="password">Create Password:</label>
+    <input type="password" id="password" name="password" required />
+
+    <hr />
+
+    <div class="form-group-inline">
+      <input type="checkbox" id="program" name="program" />
+      <label for="program">Program</label>
+    </div>
+        <div class="form-group-inline">
+          <input type="Checkbox" id="yearLevel" name="yearLevel" />
+            <label for="YearLevel">Year Level</label>
+             <input type="text" id="year-level" required>
+    </div>
+        <div class="form-group-inline">
+           <input type="checkbox" id="terms" name="terms" required />
+           <label for="terms">I accept the <a href="#" target="_blank" rel="noopener noreferrer">terms and conditions</a></label>
+    </div>
+
+    <p class="disclaimer">
+      The school ensures data protection by adhering to relevant privacy laws, applying encryption, and requiring informed consent before any external sharing.
+    </p>
+
+        <label class="file-upload-label" for="profilePic">Upload a profile picture:</label>
+       <input type="file" id="profilePic" name="profilePic" accept="image/*" />
+
+       <label for="birthdate">Birthdate:</label>
+      <input type="date" id="birthdate" name="birthdate" placeholder="dd/mm/yyyy" />
+
+       <label for="specialization">Specialization?</label>
+          <select id="specialization" name="specialization">
+            <option value="" Select One>(Select one)</option>
+              <option value="WebDevelopement">Web Design</option>
+                <option value="SoftwareDevelopment">Software Development</option>
+                  <option value="DataScience">Data Science</option>
+                   <option value="CyberSecurity">Cybersecurity</option>
+                     <option value="Ai">Artificial Intelligence</option>w
+                   <option value="Others">Others</option>
+    </select>
+
+    <label for="bio">Bio:</label>
+    <textarea id="bio" name="bio" placeholder="Type Here" spellcheck="false"></textarea>
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</body>
+</html>
